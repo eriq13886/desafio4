@@ -1,0 +1,32 @@
+{
+  "name": "desafio4",
+  "version": "1.0.0",
+  "description": "desafio4 Curso Estándares de Calidad y Pruebas",
+  "main": "index.js",
+  "scripts": {
+    "test-snapshots": "jest --config=jest.config.js --detectOpenHandles --forceExit",
+    "test-snapshots-update": "jest --config=jest.config.js --updateSnapshot --detectOpenHandles --forceExit",
+    "test:percy": "npx percy exec -- jest ./tests-snapshots/__tests__/percy.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eriq13886/desafio4.git"
+  },
+  "author": "Erick Adrian Trejo Mora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eriq13886/desafio4/issues"
+  },
+  "homepage": "https://github.com/eriq13886/desafio4#readme",
+  "dependencies": {
+    "@percy/cli": "^1.30.4",
+    "@percy/puppeteer": "^2.0.2",
+    "desafio4": "file:",
+    "jest": "^29.7.0",
+    "jest-image-snapshot": "^6.4.0",
+    "puppeteer": "^23.9.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.4.1"
+  }
+}
